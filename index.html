@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>LIFE STYLE COFFEE</title>
+</head>
+<body>
+  
+  <!-- header -->
+  <header class="py-4">
+    <div class="container text-center">
+      <h1>
+        <a href="index.html"><img src="images/ダウンロード.png" alt="life style coffee" class="top-img"></a>
+      </h1>
+    </div>
+  </header>
+
+  <!-- navigation bar -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">LIFE STYLE COFFEE</a>
+
+      <!-- 切り替えボタン -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <!-- navigation -->
+      <div class="collapse navbar-collapse" id="navbar-content">
+        <!-- navigation menu -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link active" aria-current="page" href="#">Top</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#menu">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#coupon">Coupon</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Information
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#shop">Shop</a></li>
+              <li><a class="dropdown-item" href="#access">Access</a></li>
+            </ul>
+          </li>          
+        </ul>
+
+        <!-- contactページへのリンク -->
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-info" type="submit">
+            <a href="contact.html">Contact</a>
+          </button>
+        </form>
+
+        
+      </div>
+    </div>
+  </nav>
+
+  <!-- main -->
+  <main>
+    <div class="py-4">
+      <div class="container">
+        <!-- カルーセルアウター -->
+        <div id="main_visual" class="carousel slide" data-bs-ride="carousel">
+          <!-- インジケーター -->
+          <ol class="carousel-indicators">
+            <li data-target="#main_visual" data-bs-slide-to="0" class="active"></li>
+            <li data-target="#main_visual" data-bs-slide-to="1"></li>
+            <li data-target="#main_visual" data-bs-slide-to="2"></li>
+          </ol>
+
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <!-- インジケーター -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <!-- カルーセルインナー -->
+            <div class="carousel-inner">
+              <!-- スライド1 -->
+              <div class="carousel-item active">
+                <img src="images/background-of-roasted-fresh-brown-coffee-beans-perfect-for-a-cool-wallpaper.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h2>LIFE STYLE COFFEEのこだわり</h2>
+                  <p>世界中のコーヒー豆を店主自ら厳選し、豆の種類に合わせた焙煎、抽出しております。</p>
+                </div>
+              </div>
+              <!-- スライド2 -->
+              <div class="carousel-item">
+                <img src="images/5638411.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h2>LIFE STYLE COFFEEのメニュー</h2>
+                  <p>コーヒーはもちろんのこと、モーニングやランチ、季節のスイーツなどもご好評いただいております。</p>
+                </div>
+              </div>
+              <!-- スライド3 -->
+              <div class="carousel-item">
+                <img src="images/abstract-blur-and-defocused-restaurant-and-coffee-shop-cafe-interior.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h2>LIFE STYLE COFFEEの空間</h2>
+                  <p>店主拘りのインテリアで構成された空間は癒しとくつろぎを満喫できます。</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>          
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- content1 -->
+    <div class="py-4">
+      <section id="news">
+        <div class="container">
+          <div class="row">
+            <!-- 左カラム -->
+            <div class="col-md-2">
+              <h3>News</h3>
+            </div>
+            <!-- 右カラム -->
+            <div class="col-md-10">
+              <div class="row">
+                <dt class="col-md-3">2022年○月○日</dt>
+                <dd class="col-md-9">ランチクーポン配布中</dd>
+                <dt class="col-md-3">2022年○月○日</dt>
+                <dd class="col-md-9">季節のメニュー追加しました</dd>
+                <dt class="col-md-3">2022年○月○日</dt>
+                <dd class="col-md-9">雑貨を入荷しました</dd>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- content2 -->
+    <div class="py-4 bg-light">
+      <section id="about">
+        <div class="container">
+
+          <!-- 上段 -->
+          <div class="row mb-4">
+            <div class="col-md-8 mb-3">
+              <h3 class="mb-3">LIFE STYLE COFFEE</h3>
+              <p>
+                LIFE STYLE COFFEEは、店主が焙煎したこだわりのコーヒーを最高の空間とおもてなしで提供する自家焙煎のカフェです。店主が世界中のコーヒー豆を厳選し、コーヒー豆の種類にあわせ、心を込めて焙煎、抽出しております。また、亭主拘りの照明にも目を向けてほしいです。
+              </p>
+              <p>
+                最高に美味しい一杯のコーヒーを、最高に心地よい空間で。美味しいコーヒーを飲みながら、ゆったりとした素敵な時間を過ごしに、ぜひLIFE STYLE COFFEEにお越しください。
+              </p>
+              <a href="#menu" class="btn btn-dark">メニューを見る</a>
+              <a href="#shop" class="btn btn-dark">店舗情報を見る</a>
+            </div>
+            <div class="col-md-4">
+                <img src="images/top-view-coffee-cup-and-coffee-beans-on-dark-table.jpeg" alt="店主の厳選豆を焙煎した拘りコーヒー" class="img-fluid">
+            </div>
+          </div>
+
+          <!-- 下段 -->
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-3">
+                <img src="images/cafe-coffee-decorated-in-warm-colors-makes-it-look-warm-suitable-for-resting-or-sitting-the-shop-furniture-uses-brown-iron-chairs-the-tabletop-uses-white-marble-soft-seat-and-tone-control.jpeg" alt="" class="img-fluid">
+                <div class="card-body d-flex justify-content-between">
+                  <h4 class="card-title">癒しの空間</h4>
+                  <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#madal01-label">詳細ページ</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-3">
+                <img src="images/a-calm-interior-and-kitchen-space-with-foliage-plants.jpg" alt="" class="img-fluid">
+                <div class="card-body d-flex justify-content-between">
+                  <h4 class="card-title">雑貨コーナー</h4>
+                  <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#madal02-label">詳細ページ</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-3">
+                <img src="images/background-interior-electricity-retro-lights.jpeg" alt="" class="img-fluid">
+                <div class="card-body d-flex justify-content-between">
+                  <h4 class="card-title">ヴィンテージライト</h4>
+                  <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#madal03-label">詳細ページ</button>
+                </div>
+              </div>
+            </div>
+            
+            <!-- モーダル -->
+            <!-- モーダル01 -->
+            <div class="modal fade" id="madal01-label" tabindex="-1" role="dialog" aria-labelledby="madal01-label" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="modal01-label">癒しの空間</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="text-center">
+                      <img src="images/cafe-coffee-decorated-in-warm-colors-makes-it-look-warm-suitable-for-resting-or-sitting-the-shop-furniture-uses-brown-iron-chairs-the-tabletop-uses-white-marble-soft-seat-and-tone-control.jpeg" alt="#" class="img-fluid">
+                    </p>
+                    <p>
+                      店主の拘りのインテリアが素敵な空間へ誘ってくれます。ゆっくり満喫してください。
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- モーダル02 -->
+            <div class="modal fade" id="madal02-label" tabindex="-1" role="dialog" aria-labelledby="madal02-label" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="modal02-label">雑貨コーナー</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="text-center">
+                      <img src="images/a-calm-interior-and-kitchen-space-with-foliage-plants.jpg" alt="#" class="img-fluid">
+                    </p>
+                    <p>
+                      店内には店主の好きな雑貨を展示販売しております。委託販売も致しておりますので、
+                      ご希望の方はお問い合わせフォームよりお問い合わせください。
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- モーダル03 -->
+            <div class="modal fade" id="madal03-label" tabindex="-1" role="dialog" aria-labelledby="madal03-label" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="modal03-label">ヴィンテージライト</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="text-center">
+                      <img src="images/background-interior-electricity-retro-lights.jpeg" alt="#" class="img-fluid">
+                    </p>
+                    <p>
+                      ヴィンテージのライトも展示販売しております。レトロで雰囲気あるライトを
+                      お探しの方はこの機会に是非。
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    </div>
+
+    <!-- content3 -->
+    <div class="py-4">
+      <section id="menu">
+        <div class="container">
+          <h3 class="mb-3">Menu</h3>
+          <p>
+           LIFE STYLE COFFEEのメニューです。掲載していない季節限定メニューはLIFE STYLE COFFEEの
+          <a href="#">ブログ</a>にて紹介しています。
+          </p>
+
+          <!--タブ型ナビゲーション -->
+          <nav>
+            <ul class="nav nav-tabs" id="tab-menus" role="tablist">
+              <!-- タブ01 -->
+              <li class="nav-item" role="presentation">
+                <button type="button" id="tab-menu01" class="nav-link active" data-bs-toggle="tab" data-bs-target="#panel-menu01" role="tab" aria-controls="panel-menu01" aria-selected="true">コーヒー</button>
+              </li>
+              
+              <!-- タブ02 -->
+              <li class="nav-item" role="presentation">
+                <button type="button" id="tab-menu02" class="nav-link" data-bs-toggle="tab" data-bs-target="#panel-menu02" role="tab" aria-controls="panel-menu02" aria-selected="false">モーニング</button>
+              </li>
+              
+              <!-- タブ03 -->
+              <li class="nav-item" role="presentation">
+                <button type="button" id="tab-menu03" class="nav-link" data-bs-toggle="tab" data-bs-target="#panel-menu03" role="tab" aria-controls="panel-menu03" aria-selected="false">ランチ</button>
+              </li>
+              
+              <!-- タブ04 -->
+              <li class="nav-item" role="presentation">
+                <button type="button" id="tab-menu04" class="nav-link" data-bs-toggle="tab" data-bs-target="#panel-menu04" role="tab" aria-controls="panel-menu04" aria-selected="false">デザート</button>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- パネル -->
+          <div class="tab-content" id="panel-menus">
+            <!-- パネル01 -->
+              <div class="tab-pane fade show active border border-top-0" id="panel-menu01" role="tabpanel" aria-labelledby="panel-menu01">
+                <div class="row p-3">
+                  <div class="col-md-7 order-md-2">
+                    <h4>COFFEE</h4>
+                    <table class="table table-striped">
+                      <tbody>
+                        <tr>
+                          <th>M ブレンド</th>
+                          <td>400円(税込)</td>
+                        </tr>
+                        <tr>
+                          <th>アイスコーヒー</th>
+                          <td>450円(税込)</td>
+                        </tr>
+                        <tr>
+                          <th>L ブレンド</th>
+                          <td>450円(税込)</td>
+                        </tr>
+                        <tr>
+                          <th>カフェラテ</th>
+                          <td>400円(税込)</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="col-md-5">
+                    <img src="images/cup-of-hot-coffe.jpg" alt="コーヒー画像" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+
+            <!-- パネル02 -->
+              <div class="tab-pane fade show border border-top-0" id="panel-menu02" role="tabpanel" aria-labelledby="panel-menu02">
+                <div class="row p-3">
+                  <div class="col-md-7 order-md-2">
+                    <h4>MORNING</h4>
+                    <table class="table table-striped">
+                      <tbody>
+                        <tr>
+                          <th>トーストセット</th>
+                          <td>480円(税込)</td>
+                        </tr>
+                        <tr>
+                          <th>フレンチトーストセット</th>
+                          <td>500円(税込)</td>
+                        </tr>
+                        <tr>
+                          <th>トースト目玉焼きセット</th>
+                          <td>550円(税込)</td>
+                        </tr>
+                        <tr>
+                          <th>スープセット</th>
+                          <td>450円(税込)</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="col-md-5">
+                    <img src="images/vegetable-soup-with-potato-and-cauliflower.jpeg" alt="モーニング画像" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+
+            <!-- パネル03 -->
+              <div class="tab-pane fade show border border-top-0" id="panel-menu03" role="tabpanel" aria-labelledby="panel-menu03">
+                <div class="row p-3">
+                  <div class="col-md-7 order-md-2">
+                    <h4>LUNCH</h4>
+                    <table class="table table-striped">
+                      <tbody>
+                        <tr>
+                          <th>パスタランチ</th>
+                          <td>800円(税込)</td>
+                        </tr>
+                        <tr>
+                          <th>カレーライス</th>
+                          <td>700円(税込)</td>
+                        </tr>
+                        <tr>
+                          <th>サンドイッチセット</th>
+                          <td>650円(税込)</td>
+                        </tr>
+                        <tr>
+                          <th>ハンバーグランチ</th>
+                          <td>900円(税込)</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="col-md-5">
+                    <img src="images/basil-minced-pork-with-rice-and-fried-egg.jpeg" alt="ランチ画像" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+
+            <!-- パネル04 -->
+              <div class="tab-pane fade show border border-top-0" id="panel-menu04" role="tabpanel" aria-labelledby="panel-menu04">
+                <div class="row p-3">
+                  <div class="col-md-7 order-md-2">
+                    <h4>DESSERT</h4>
+                    <table class="table table-striped">
+                      <tbody>
+                        <tr>
+                          <th>チーズケーキ</th>
+                          <td>350円(税込)</td>
+                        </tr>
+                        <tr>
+                          <th>シフォンケーキ</th>
+                          <td>400円(税込)</td>
+                        </tr>
+                        <tr>
+                          <th>チョコレートケーキ</th>
+                          <td>400円(税込)</td>
+                        </tr>
+                        <tr>
+                          <th>パウンドケーキ</th>
+                          <td>400円(税込)</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="col-md-5">
+                    <img src="images/closeup-shot-of-delicious-cream-puff-with-strawberries-on-a-wooden-table.jpeg" alt="デザート画像" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    
+
+    <!-- content4 -->
+    <div class="py-4 bg-light">
+      <section id="coupon">
+        <div class="container">
+          <h3 class="text-center mb-3">Coupon</h3>
+          <div class="card text-center text-dark w-75 mx-auto">
+            <div class="card-header bg-success text-white">LIFE STYLE COFFEE クーポン</div>
+            <div class="card-body">
+              <h5 class="card-title">食後のコーヒープラス100円にてご提供</h5>
+              <p class="card-text text-justify">ワンプレートランチ(限定20食)ご注文お客様に、プラス100円で食後のコーヒーをご提供させていただきます。お会計の際に、このクーポン画面をスタッフにご提示ください。</p>
+            </div>
+            <div class="card-footer bg-success text-white">クーポンコート：　ABCDEFG</div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+    <!-- content5 -->
+    <div class="py-4">
+      <section id="information">
+        <div class="container">
+          <h3 class="mb-3">Information</h3>
+          <p>LIFE STYLE COFFEEは〇〇県〇〇市にあります。大自然に囲まれて、拘りのコーヒーを飲みながら、
+            美味しい空気と雰囲気をご堪能ください。
+          </p>
+          <div class="row">
+
+            <!-- 左側セクション -->
+            <div class="col-md-6">
+              <section id="shop">
+                <h4 class="mb-3">Shop</h4>
+
+                <!-- 店舗情報 -->
+                <table class="table table-hover">
+                  <tbody>
+                    <tr>
+                      <th>店名</th>
+                      <td>LIFE STYLE COFFEE</td>
+                    </tr>
+                    <tr>
+                      <th>住所</th>
+                      <td>〒000-0000　〇〇県〇〇市〇〇町0-0-0</td>
+                    </tr>
+                    <tr>
+                      <th>電話番号</th>
+                      <td>000-000-0000</td>
+                    </tr>
+                    <tr>
+                      <th>営業時間</th>
+                      <td>8：00〜18：00</td>
+                    </tr>
+                    <tr>
+                      <th>モーニング</th>
+                      <td>8：00〜10：30</td>
+                    </tr>
+                    <tr>
+                      <th>ランチタイム</th>
+                      <td>11：00〜14：00</td>
+                    </tr>
+                    <tr>
+                      <th>定休日</th>
+                      <td>火曜日</td>
+                    </tr>
+                    <tr>
+                      <th>駐車場</th>
+                      <td>駐車場有り</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+            </div>
+
+            <!-- 右側セクション -->
+            <div class="col-md-6">
+              <section class="access">
+                <h4 class="mb-3">Access</h4>
+
+                <!-- アクセスマップ -->
+                <div class="embed-responsive embed-responsive-4by3">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2788.164221775616!2d130.80699980979404!3d32.65463801583934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1648197381164!5m2!1sja!2sjp" width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                
+                <!-- アクセスマップ -->
+                <p>〇〇駅から徒歩10分、駐車場有り</p>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- footer -->
+  <footer class="py-4 bg-dark text-light">
+    <div class="container text-center">
+
+      <!-- navigation -->
+      <ul class="nav justify-content-center mb-3">
+        <li class="nav-item">
+          <a href="#" class="nav-link">Top</a>
+        </li>
+        <li class="nav-item">
+          <a href="#news" class="nav-link">News</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#menu" class="nav-link">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a href="#coupon" class="nav-link">Coupon</a>
+        </li>
+        <li class="nav-item">
+          <a href="#shop" class="nav-link">Information</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact.html" class="nav-link">Contact</a>
+        </li>
+      </ul>
+      <p>
+        <small>Copyright &copy;2021 LIFE STYLE COFFEE,ALL Right Reserved.</small>
+      </p>
+    </div>
+  </footer>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
